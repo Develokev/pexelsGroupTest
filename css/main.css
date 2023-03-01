@@ -1,3 +1,4 @@
+/** COMMON FOR ALL +++++++++++++++++++++++++++ */
 * {
     padding: 0;
     margin: 0;
@@ -24,8 +25,93 @@ select {
     margin: 5px;
     text-align: right;
 }
+/* HEADER +++++++++++++++++ */
+h1 {
+    background-color: black;
+    color:whitesmoke;
+    text-align: center;
+    margin-bottom: 2%;
+    font-family: Verdana;
+    border-radius: 50px;
+    transition-duration: 0.4s;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.24),
+    0 3px 5px 0 rgba(181, 75, 213, 0.19);
 
-#secCards {
+}
+
+h1:hover {
+    color: rgb(108, 108, 223);
+}
+
+a {
+    text-decoration: none;
+}
+
+.gridContainerNav {      /*!Grid container for navigation */
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    margin: 0 auto;
+    width: 90%;
+}
+
+#searchBlank {
+    width: 60%;
+}
+
+#searchForm {
+    margin: 0 auto;
+}
+
+#searchButton {
+    border: none;
+    color: rgb(21, 21, 21);
+    background-color: rgba(178, 205, 239, 0.845);
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20%;
+    margin-left: 12px;
+    transition-duration: 0.4s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),
+    0 5px 15px 0 rgba(181, 75, 213, 0.19);
+}
+
+#searchButton:hover {
+    color: rgb(136, 44, 217);
+    transform:scale(1.2);
+    border: 1px solid rgb(102, 17, 240);
+    background-color: whitesmoke;
+}
+
+#radioImputs {
+    background-color: rgb(217, 217, 233);
+    font-family: Tahoma;
+    font-size: 18px;
+    border-radius: 25%;
+    text-align: center;
+    margin-top: 15px;
+    word-spacing: 10px;
+    transition: 0.5s;
+}
+
+#radioImputs:hover {
+    color: rgb(108, 108, 223);
+    background-color: whitesmoke;
+    border-radius: 20%;
+}
+
+/* FOOTER +++++++++++++++++ */
+footer {
+    text-align: center;
+    font-family: Verdana;
+    border-top: 1px solid black;
+    width: 100%;
+}
+/** GENERALS +++++++++++++++++++++++++++++++++ */
+
+
+/* CARDS +++++++++++++++++ */
+#secCards {           /*Grid container for card section */
     display: grid;
     width: 90%;
     margin: 10px auto;
@@ -43,19 +129,18 @@ select {
 }
 
 .divCard {
-    display: grid;
-    margin-top: 5px;
-    width: 95%;
-    padding: 5px;
-    grid-template-columns: 1fr;
-    background-color: rgb(0, 0, 0);
-    border: 1px solid rgb(66, 66, 66);
-    color: rgb(240, 237, 237);
-
+    margin: 20px;
+    background-color: rgb(11, 3, 13);
+    width: 80%;
+    text-align: center;
+    color: white;
     border-radius: 20px;
     cursor: pointer;
-    text-align: center;
+    transition-duration: 0.5s;
     justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 5px;
 }
 
 .divCard p:not(:last-of-type) {
@@ -69,8 +154,11 @@ select {
 }
 
 .divCard:hover {
-    background-color: rgb(26, 25, 25);    
-    box-shadow: 0 0 5px 2px rgb(0, 0, 0);
+    background-color: rgb(34, 17, 35);
+    translate: 0px -10px;
+    box-shadow: 0 7px 0px 5px black;
+    transform: scale(1.1);
+    transform:rotate(4deg);
 }
 
 .divCard img {
@@ -84,6 +172,7 @@ select {
     font-size: 0.8em;
 }
 
+/* REST +++++++++++++++++ */
 #divBotones {    
     background-image: linear-gradient( rgb(36, 35, 35) ,white);
     text-align: center;

@@ -5,28 +5,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/main.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Pexels Filters - Pablo/Kevin</title>
 </head>
 
 <body>
-
-    <header>
-        <h1>Pexels</h1>
+<header class="gridContainerNav">
+        <a href="../html/index.html"><h1>Pexels Practice</h1></a>
         <form id="searchForm">
             <input id="txtSearch" type="text" placeholder="Type anything...">
             <input id="submit" type="submit" value="Search">
-
-            <input type="radio" name="formato" value="portrait">
+            <div id="radioImputs">
+            <input class="radioImputs" type="radio" name="formato" value="portrait">
             <label for="portrait">Portrait</label>
-            <input type="radio" name="formato" value="landscape">
+            <input class="radioImputs" type="radio" name="formato" value="landscape">
             <label for="landscape">Landscape</label>
-            <input type="radio" name="formato" value="square" checked>
+            <input class="radioImputs" type="radio" name="formato" value="square" checked>
             <label for="square">Square</label>
+            </div>
         </form>
     </header>
 
     <main>
+        <section id="secCards">
+            <!-- <div class="divCard">
+                <p>Categoria 1</p>
+                <img src="https://images.pexels.com/photos/2014422/pexels-photo-2014422.jpeg" alt="">
+                <p>Autor: asdasdsa ads</p>
+                <p>correo: reerrew@asfsaf</p>
+            </div>
+            <div class="divCard">
+                <p>Categoria 2</p>
+                <img src="https://images.pexels.com/photos/2014422/pexels-photo-2014422.jpeg" alt="">
+                <p>Autor: asdasdsa ads</p>
+                <p>correo: reerrew@asfsaf</p>
+            </div>
+            <div class="divCard">
+                <p>Categoria 3</p>
+                <img src="https://images.pexels.com/photos/2014422/pexels-photo-2014422.jpeg" alt="">
+                <p>Autor: asdasdsa ads</p>
+                <p>correo: reerrew@asfsaf</p>
+            </div> -->
+            
         <select name="selPerPage" id="selPerPage">
             <option value="25">25 Imágenes por Página</option>
             <option value="50">50 Imágenes por Página</option>
@@ -34,10 +54,14 @@
         </select>
 
         <section id="secCards">
+        
         </section>
         <div id="divBotones"></div>
     </main>
+
+    <footer>
+        <!-- FOOTER -->
+    </footer>
     <script src="/js/main.js"></script>
 </body>
-
 </html>
