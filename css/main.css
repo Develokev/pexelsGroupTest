@@ -2,7 +2,28 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;    
+}
+
+body {
+    background-color: rgb(36, 35, 35);    
+}
+
+header {
+    background-color: white;
+}
+
+main {
+    padding: 10px;
+}
+
+select {
+    color:rgb(39, 108, 236);
+    padding: 5px;
+    width: 180px;
+    float:right;
+    margin: 5px;
+    text-align: right;
 }
 /* HEADER +++++++++++++++++ */
 h1 {
@@ -92,12 +113,19 @@ footer {
 /* CARDS +++++++++++++++++ */
 #secCards {           /*Grid container for card section */
     display: grid;
-    width: 95%;
+    width: 90%;
     margin: 10px auto;
-    grid-template-columns: 1fr 1fr 1fr;
-    border: 1px solid black;
+    padding-bottom: 10px;
+
+    grid-template-columns: 1fr 1fr 1fr;    
+    row-gap: 10px;
+
+    border: 1px solid black;    
+    background-color: rgba(0, 0, 0, 0.515);
+    border-radius: 15px;
+
     justify-items: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
 }
 
 .divCard {
@@ -109,6 +137,10 @@ footer {
     border-radius: 20px;
     cursor: pointer;
     transition-duration: 0.5s;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 5px;
 }
 
 .divCard p:not(:last-of-type) {
@@ -116,7 +148,6 @@ footer {
 }
 
 .divCard p:first-of-type {
-    text-align: center;
     font-weight: bold;
     font-size: 1.2em;
     padding: 5px;
@@ -131,14 +162,33 @@ footer {
 }
 
 .divCard img {
-    width: 200px;
-    border: 1px solid rgb(59, 59, 59);
+    max-width: 100%;
+    border-radius: 5px;
 }
 
 .divCard p:last-of-type {
-    color: rgb(231, 231, 155);
+    color: rgb(214, 236, 17);
     padding-bottom: 10px;
     font-size: 0.8em;
 }
 
 /* REST +++++++++++++++++ */
+#divBotones {    
+    background-image: linear-gradient( rgb(36, 35, 35) ,white);
+    text-align: center;
+    height: 55px;    
+}
+
+#divBotones p {
+    padding: 10px;
+    font-size: 1.5em;
+    display: inline;
+}
+
+#divBotones button {
+    padding: 10px;
+    width: 50px;    
+    margin: 5px;
+    box-shadow: 0 0 2px 1px black;
+    cursor: pointer;
+}

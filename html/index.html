@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,16 +10,18 @@
 </head>
 
 <body>
-
 <header class="gridContainerNav">
         <a href="../html/index.html"><h1>Pexels Practice</h1></a>
         <form id="searchForm">
-            <input id="searchBlank" type="text">
-            <button id="searchButton"type="search">Search</button>
+            <input id="txtSearch" type="text" placeholder="Type anything...">
+            <input id="submit" type="submit" value="Search">
             <div id="radioImputs">
-                <input class="radioImputs" type="radio">Normal
-                <input class="radioImputs" type="radio">Landscape
-                <input class="radioImputs" type="radio">Portrait
+            <input class="radioImputs" type="radio" name="formato" value="portrait">
+            <label for="portrait">Portrait</label>
+            <input class="radioImputs" type="radio" name="formato" value="landscape">
+            <label for="landscape">Landscape</label>
+            <input class="radioImputs" type="radio" name="formato" value="square" checked>
+            <label for="square">Square</label>
             </div>
         </form>
     </header>
@@ -43,12 +46,22 @@
                 <p>Autor: asdasdsa ads</p>
                 <p>correo: reerrew@asfsaf</p>
             </div> -->
+            
+        <select name="selPerPage" id="selPerPage">
+            <option value="25">25 Imágenes por Página</option>
+            <option value="50">50 Imágenes por Página</option>
+            <option value="75">75 Imágenes por Página</option>
+        </select>
+
+        <section id="secCards">
+        
         </section>
+        <div id="divBotones"></div>
     </main>
 
     <footer>
         <!-- FOOTER -->
     </footer>
-    <script src="../js/main.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>
