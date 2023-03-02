@@ -14,8 +14,7 @@
         <a href="../html/index.html">
             <h1>Pexels Practice</h1>
         </a>
-        <!-- utilizar action -->
-        <form id="searchForm" action="filtered.html" method="GET">
+        <form id="searchForm">
             <input id="txtSearch" type="text" placeholder="Type anything...">
             <input id="submit" type="submit" value="Search">
             <div id="radioImputs">
@@ -29,21 +28,23 @@
         </form>
     </header>
 
-    <main>
-        <select name="selPerPage" class="selPerPage">
-            <option value="25">25 Imágenes por Página</option>
-            <option value="50">50 Imágenes por Página</option>
-            <option value="75">75 Imágenes por Página</option>
-        </select>
+    <body>
+        <main>
+            <button class="btnAnt">&lt;&lt;</button>
+            <button class="btnSig">>></button>
 
-        <section id="secCards">
-        </section>
-    </main>
+            <select name="selPerPage" class="selPerPage">
+                <option value="25">25 Imágenes por Página</option>
+                <option value="50">50 Imágenes por Página</option>
+                <option value="75">75 Imágenes por Página</option>
+            </select>
 
-    <footer>
-        <h3>all rights reserved.</h3>
-    </footer>
-    <script src="/js/main.js"></script>
-</body>
+            <section id="secCards">
+                <h3>all rights reserved.</h3>
+            </section>
+            <div id="divBotones"></div>
+        </main>
+        <script src="/js/main.js"></script>
+    </body>
 
 </html>

@@ -1,0 +1,275 @@
+/** COMMON FOR ALL +++++++++++++++++++++++++++ */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+}
+
+body {
+    background-color: rgb(36, 35, 35);    
+}
+
+header {
+    border-bottom: 1px solid black;
+}
+
+main {
+    padding: 10px;
+    margin-bottom: 2%;
+}
+
+select {
+    color:rgb(39, 108, 236);
+    padding: 5px;
+    width: 180px;
+    float:right;
+    margin: 5px;
+    text-align: right;
+}
+/* HEADER +++++++++++++++++ */
+h1 {
+    background-color: black;
+    color:whitesmoke;
+    text-align: center;
+    margin-bottom: 2%;
+    font-family: Verdana;
+    border-radius: 50px;
+    transition-duration: 0.4s;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.24),
+    0 7px 5px 0 rgba(181, 75, 213, 0.19);
+
+}
+
+h1:hover {
+    color: rgb(108, 108, 223);
+}
+
+a {
+    text-decoration: none;
+}
+
+.gridContainerNav {      /*!Grid container for navigation */
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    margin: 0 auto;
+    width: 90%;
+}
+
+#txtSearch {
+    width: 60%;
+}
+
+#searchForm {
+    margin: 0 auto;
+    margin-bottom: 3%;
+}
+
+#submit {
+    border: none;
+    color: rgb(21, 21, 21);
+    background-color: rgba(178, 205, 239, 0.845);
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20%;
+    margin-left: 12px;
+    transition-duration: 0.4s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),
+    0 5px 15px 0 rgba(181, 75, 213, 0.19);
+}
+
+#submit:hover {
+    color: rgb(136, 44, 217);
+    transform:scale(1.2);
+    border: 1px solid rgb(102, 17, 240);
+    background-color: whitesmoke;
+}
+
+#radioInputs {
+    background-color: rgb(217, 217, 233);
+    font-family: Tahoma;
+    font-size: 18px;
+    border-radius: 20%;
+    text-align: center;
+    margin-top: 15px;
+    word-spacing: 10px;
+    transition: 0.5s;
+}
+
+label {
+    color: white;
+}
+
+#radioInputs:hover {
+    color: rgb(108, 108, 223);
+    background-color: rgb(29, 20, 36);
+    border-radius: 25%;
+    transform:scale(1.1);
+}
+
+/* FOOTER +++++++++++++++++ */
+footer {
+    text-align: center;
+    font-family: sans-serif;
+    border-top: 1px solid black;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    width: 100%;
+    color:whitesmoke
+}
+/** GENERALS +++++++++++++++++++++++++++++++++ */
+
+
+/* CARDS +++++++++++++++++ */
+#secCards {           /*Grid container for card section */
+    display: grid;
+    width: 90%;
+    margin: 10px auto;
+    padding-bottom: 10px;
+
+    grid-template-columns: 1fr 1fr 1fr;    
+    row-gap: 10px;
+
+    border: 1px solid black;    
+    background-color: rgba(0, 0, 0, 0.515);
+    border-radius: 15px;
+
+    justify-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+}
+
+.divCard {
+    margin: 20px;
+    background-color: rgb(11, 3, 13);
+    width: 80%;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 5px;
+}
+
+.divCard p:not(:last-of-type) {
+    padding-top: 10px;
+}
+
+.divCard p:first-of-type {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+.divCard:hover {
+    background-color: rgb(34, 17, 35);
+    translate: 0px -10px;
+    box-shadow: 0 7px 0px 5px black;
+    transform: scale(1.1);
+    transform:rotate(4deg);
+}
+
+.divCard img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.divCard p:last-of-type {
+    color: rgb(214, 236, 17);
+    padding-bottom: 10px;
+    font-size: 0.8em;
+}
+
+/* REST +++++++++++++++++ */
+#divBotones {    
+    background-image: linear-gradient( rgb(36, 35, 35) ,white);
+    text-align: center;
+    height: 55px;    
+}
+
+#divBotones p {
+    padding: 10px;
+    font-size: 1.5em;
+    display: inline;
+}
+
+.selPerPage {
+    margin-right: 10%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#divBotones button,
+.btnAnt,
+.btnSig {
+    padding: 10px;
+    width: 50px;
+    margin: 5px;
+    box-shadow: 0 0 2px 1px black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btnAnt {
+    display: absolute;
+    position: fixed;
+    top: 50vh;
+    left: 0;
+    box-shadow: 0px 0px 5px 1px rgb(255, 255, 255);
+}
+
+.btnSig {
+    display: absolute;
+    position: fixed;
+    top: 50vh;
+    right: 0;
+    box-shadow: 0px 0px 5px 1px rgb(255, 255, 255);
+}
+
+.selected {
+    background-color: rgba(255, 0, 0, 0.219);
+}
+
+.selected {
+    background-color: rgba(255, 0, 0, 0.219);
+}
+
+/* SINGLE PHOTO +++++++++++++++++ */
+
+
+.singlePhoto p:first-of-type{
+    color:rgb(242, 232, 245);
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    padding: 8%;
+    font-family: sans-serif;
+}
+
+.singlePhoto p:last-of-type{
+    color:rgb(16, 151, 52);
+    text-align: center;
+    padding: 5px;
+}
+
+.singlePhoto img{
+    max-width: 120%;
+    border-radius: 100px;
+}
+
+#main {
+    margin: 0 auto;
+}
+
+#main div:hover {
+    transform:scale(1.3);
+    transition: 0.5s;
+}
+
+.singlePhoto p:hover {
+    color: rgb(116, 99, 201);
+    transition: 0.5s;
+}
+
