@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (optFormato[0].checked) return "portrait";
         if (optFormato[1].checked) return "landscape";
         if (optFormato[2].checked) return "square";
-    };
+    }; //usar ev change form
 
 
     //Trae la cantidad de imagenes por página elegido por el usuario
@@ -156,7 +156,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 //Búsqueda para mostrar la foto grande.
                 peticion = await fetch(urlSingle + foto,
                     { headers: { authorization: API } });
+
             }
+            //peticion aqui
 
             if (peticion.ok) {
                 const resp = await peticion.json();
@@ -200,7 +202,7 @@ document.addEventListener("DOMContentLoaded", () => {
             respuesta.photos.forEach(item => fragmentPhotos.append(paintCards(item)));
             secCards.append(fragmentPhotos);
 
-            const totalPaginas = Math.floor(respuesta.total_results / respuesta.per_page);
+            const totalPaginas = Math.ceil(respuesta.total_results / respuesta.per_page);
             setLocal(url, categoria, totalPaginas)
 
             window.scrollTo(0, 0);
