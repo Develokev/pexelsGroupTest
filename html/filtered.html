@@ -1,33 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main.css">
-    <title>Document</title>
+    <title>Pexels Filters - Pablo/Kevin</title>
 </head>
 
 <body>
-
-<header class="gridContainerNav">
-        <a href="../html/index.html"><h1>Pexels Practice</h1></a>
+    <header class="gridContainerNav">
+        <a href="../html/index.html">
+            <h1>Pexels Practice</h1>
+        </a>
         <form id="searchForm">
-            <input id="searchBlank" type="text">
-            <button id="searchButton"type="search">Search</button>
+            <input id="txtSearch" type="text" placeholder="Type anything...">
+            <input id="submit" type="submit" value="Search">
             <div id="radioImputs">
-                <input class="radioImputs" type="radio">Normal
-                <input class="radioImputs" type="radio">Landscape
-                <input class="radioImputs" type="radio">Portrait
+                <input class="radioInputs" type="radio" name="formato" value="portrait">
+                <label for="portrait">Portrait</label>
+                <input class="radioInputs" type="radio" name="formato" value="landscape">
+                <label for="landscape">Landscape</label>
+                <input class="radioInputs" type="radio" name="formato" value="square" checked>
+                <label for="square">Square</label>
             </div>
         </form>
     </header>
 
-    <main>
-        <section id="secCards">
-            <!-- Inserción de imágenes filtradas -->
-        </section>
-        </section>
-    </main>
-</body>
+    <body>
+        <main>
+            <button class="btnAnt">&lt;&lt;</button>
+            <button class="btnSig">>></button>
+
+            <select name="selPerPage" class="selPerPage">
+                <option value="25">25 Imágenes por Página</option>
+                <option value="50">50 Imágenes por Página</option>
+                <option value="75">75 Imágenes por Página</option>
+            </select>
+
+            <section id="secCards">
+                <!-- Inserción de imágenes filtradas -->
+            </section>
+            <div id="divBotones"></div>
+        </main>
+        <script src="/js/main.js"></script>
+    </body>
+
 </html>
